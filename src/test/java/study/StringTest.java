@@ -17,6 +17,13 @@ public class StringTest {
         assertThat(split).contains("1");
     }
 
+    @Test
+    void requirement2() {
+        String str = "(1,2)";
+        String result = str.substring(1, str.length()-1);
+        assertThat(result).isEqualTo("1,2");
+    }
+
 }
 
 
