@@ -14,14 +14,14 @@ public class StringTest {
     }
 
     @Test
-    void requirement1() {
+    void splitTest() {
         String str = "1,2";
         String[] split = str.split(",");
         assertThat(split).contains("1");
     }
 
     @Test
-    void requirement2() {
+    void subStringTest() {
         String str = "(1,2)";
         String result = str.substring(1, str.length()-1);
         assertThat(result).isEqualTo("1,2");
@@ -40,7 +40,7 @@ public class StringTest {
 
     @Test
     @DisplayName("Exception 테스트")
-    public void testException() {
+    public void charAtTest() {
         assertThatIOException().isThrownBy(() -> {throw new IOException("boom!"); })
                 .withMessage("%s!", "boom")
                 .withMessageContaining("boom")
