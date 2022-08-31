@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
+ * 숫자야구게임
  * @author jhkim
  * @since 2022-08-30
  */
